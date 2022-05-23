@@ -1,5 +1,6 @@
 package lesson_5_races;
 
+
 import java.util.concurrent.BrokenBarrierException;
 
 public class Road extends Stage {

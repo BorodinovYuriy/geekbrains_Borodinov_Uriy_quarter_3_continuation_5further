@@ -1,5 +1,6 @@
 package lesson_5_races;
 
+
 public class Tunnel extends Stage {
     Tunnel() {
         this.length = 80;

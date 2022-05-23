@@ -5,6 +5,7 @@
 
 <VBox fx:id="allApp" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csbd.ClientController">
    <MenuBar fx:id="menu" disable="true">
+
      <menus>
        <Menu mnemonicParsing="false" text="File">
          <items>

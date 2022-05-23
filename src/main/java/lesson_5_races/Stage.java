@@ -1,5 +1,6 @@
 package lesson_5_races;
 
+
 public abstract class Stage {
     int length;
     String description;
