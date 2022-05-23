@@ -1,10 +1,7 @@
 package lesson_5_races;
 
-
-import java.util.concurrent.BrokenBarrierException;
-
 public class Road extends Stage {
-    Road(int length) {
+    public Road(int length) {
         this.length = length;
         this.description = "Дорога " + length + " метров";
     }
@@ -13,15 +10,9 @@ public class Road extends Stage {
         try {
             System.out.println(c.getName() + " начал этап: " + description);
             Thread.sleep(length / c.getSpeed() * 1000);
-
-            MainClass.roadStage_CB.await();//!
-
             System.out.println(c.getName() + " закончил этап: " + description);
-            if(this.length == 40) {
 
-                MainClass.finishLine_CD.countDown();//!
-            }
-        } catch (InterruptedException | BrokenBarrierException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
